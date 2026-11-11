@@ -36,7 +36,7 @@ praxis::expected<Eigen::Matrix4d, praxis::refusal> screw(const praxis::rigid_mot
 }
 
 //TASK: T.3c
-// Reference: Modern Robotics (2019), Sec. 9.2.1, Eqs. (9.3), (9.8).
+//REFERENCE Modern Robotics (2019), Sec. 9.2.1, Eqs. (9.3), (9.8).
 praxis::expected<Eigen::Matrix4d, praxis::refusal> decoupled(const praxis::rigid_motion::screw_ops &motion, const praxis::rigid_motion::frame_ops &frames, const Eigen::Matrix4d &start,
                                                              const Eigen::Matrix4d &end, double s)
 {

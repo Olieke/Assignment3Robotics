@@ -24,14 +24,14 @@ praxis::expected<Eigen::Vector3d, praxis::refusal> position_from_pose(const Eige
 }
 
 //TASK: T.2c
-// Reference: Modern Robotics (2019), Sec. 3.3, Eq. (3.62)–(3.63)
+//REFERENCE: Modern Robotics (2019), Sec. 3.3, Eq. (3.62)–(3.63)
 praxis::expected<Eigen::Matrix3d, praxis::refusal> orientation_from_pose(const Eigen::Matrix4d &pose)
 {
     return pose.block<3, 3>(0, 0);
 }
 
 //TASK: T.2d
-// Reference: Modern Robotics (2019), Sec. 6.2.1–6.2.2.
+//REFERENCE: Modern Robotics (2019), Sec. 6.2.1–6.2.2.
 praxis::expected<Eigen::VectorXd, praxis::refusal> ik_solve_flange_pose(const praxis::manipulator::kinematics &solver, const Eigen::Matrix4d &flange_pose, const Eigen::VectorXd &j0)
 {
     // Check that the initial guess has one value per joint
@@ -48,7 +48,7 @@ praxis::expected<Eigen::VectorXd, praxis::refusal> ik_solve_flange_pose(const pr
 }
 
 //TASK: T.2e
-// Reference: Modern Robotics (2019), Sec. 3.3 and 6.2.1–6.2.2.
+//REFERENCE: Modern Robotics (2019), Sec. 3.3 and 6.2.1–6.2.2.
 praxis::expected<Eigen::VectorXd, praxis::refusal> ik_solve_pose(const praxis::manipulator::kinematics &solver, const praxis::rigid_motion::frame_ops &frames,
                                                                  const Eigen::Matrix4d &tool_pose, const Eigen::VectorXd &j0, const Eigen::Matrix4d &tool_offset)
 {

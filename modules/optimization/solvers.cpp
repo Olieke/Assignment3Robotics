@@ -8,8 +8,8 @@
 namespace ais4104::optimization {
 
 //TASK: T.1a
-// References: Modern Robotics (2019), Sec. 6.2.1–6.2.2; Skrede, Sec. 2.6.2.
-//REFERENCE:
+//REFERENCES: Modern Robotics (2019), Sec. 6.2.1–6.2.2; Skrede, Sec. 2.6.2.
+
 praxis::expected<Eigen::VectorXd, praxis::refusal> newton_raphson(const praxis::optimization::problem &p, const Eigen::VectorXd &x0, std::uint32_t max_iterations,
                                                                   std::vector<Eigen::VectorXd> &iterates)
 {
