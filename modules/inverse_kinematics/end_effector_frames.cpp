@@ -63,3 +63,12 @@ praxis::expected<Eigen::VectorXd, praxis::refusal> ik_solve_pose(const praxis::m
 }
 
 }
+
+// TASK 2 – IK preset tests:
+//
+// KR6 R900 Sixx: 5 out of 8 solutions were found.
+// The solutions had different joint configurations.
+// Solution 5 did not appear visually correct, although the convergence errors were very small.
+//
+// LBR Med14 R820: All 8 solutions were found.
+// All solutions had different joint configurations and appeared correct.
