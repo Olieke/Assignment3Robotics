@@ -65,7 +65,7 @@ praxis::expected<Eigen::VectorXd, praxis::refusal> newton_raphson(const praxis::
 
 
 //TASK: T.1b
-//REFERENCE:
+//REFERENCE: Skrede, Sec. 2.6.3.
 praxis::expected<Eigen::VectorXd, praxis::refusal> gradient_descent(const praxis::optimization::problem &p, const Eigen::VectorXd &x0, double step_length,
                                                                     std::uint32_t max_iterations, std::vector<Eigen::VectorXd> &iterates)
 {
