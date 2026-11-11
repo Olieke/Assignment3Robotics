@@ -64,11 +64,9 @@ praxis::expected<Eigen::VectorXd, praxis::refusal> ik_solve_pose(const praxis::m
 
 }
 
-// TASK 2 – IK preset tests:
+// TASK 2 – Inverse kinematics tests:
 //
-// KR6 R900 Sixx: 5 out of 8 solutions were found.
-// The solutions had different joint configurations.
-// Solution 5 did not appear visually correct, although the convergence errors were very small.
-//
-// LBR Med14 R820: All 8 solutions were found.
-// All solutions had different joint configurations and appeared correct.
+// Different target poses resulted in different numbers of IK solutions.
+// Some solutions appeared to violate the joint angle limits.
+// Some solutions also appeared visually incorrect, even when the convergence errors were small.
+// Different initial guesses could result in different joint configurations.
